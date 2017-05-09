@@ -8,21 +8,33 @@ public class Numbers {
     public String oneToTen(){
         String output= "*** Output ***\n";
         String methodName= "oneToTen()\n";
-        String number="";
+        String filledString="";
 
         for (int i=1; i<=10; i++){
             if (i<=9){
-                number= number +Integer.toString(i) + "\n";
+                filledString= filledString +Integer.toString(i) + "\n";
             }
             else{
-                number = number + Integer.toString(i);
+                filledString = filledString + Integer.toString(i);
             }
         }
-        return output + methodName +  number;
+        return output + methodName +  filledString;
     }
 
     public String oddNumbers(){
-        return "";
+        String output= "*** Output ***\n";
+        String methodName= "oddNumbers()\n";
+        String filledString= "";
+
+        for(int i=1; i<=20;i++){
+            if(i%2==1 && i<=18){
+                filledString= filledString + Integer.toString(i)+"\n";
+            }
+            else if (i%2==1 && i>18){
+                filledString= filledString + Integer.toString(i);
+            }
+        }
+        return output + methodName +filledString;
     }
 
     public String squares(){
