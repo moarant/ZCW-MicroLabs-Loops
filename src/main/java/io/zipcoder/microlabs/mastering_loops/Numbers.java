@@ -57,7 +57,16 @@ public class Numbers {
     }
 
     public String random4(){
-        return "";
+        RandomNumberGenerator rng = new RandomNumberGenerator();
+        String result = "";
+        for(int i=0;i<4;i++) {
+            int randomNumber = rng.randInt(0, 100);
+            result += randomNumber;
+        }
+
+        int range = (10-1)+1;
+        int randomNumber= (int)(Math.random()*range)+1;
+        return Integer.toString(randomNumber);
     }
 
     public String even(int n){
@@ -98,5 +107,7 @@ public class Numbers {
         }
         return output+ methodName +filledString;
     }
+
+
 
 }

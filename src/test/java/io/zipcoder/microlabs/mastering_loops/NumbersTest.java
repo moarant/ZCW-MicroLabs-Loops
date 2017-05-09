@@ -78,4 +78,21 @@ public class NumbersTest {
 
     }
 
+
+    @Test
+    public void randomNumberInRangeTest(){
+        //:Given
+        int random= 5;
+        int lowestNumber = 1;
+        int highestNumber=10;
+
+
+        //: When
+
+
+        //:Then
+        Assert.assertTrue("Error, random is too high", highestNumber>=random);
+        Assert.assertTrue("Error, random is too low", lowestNumber<=random);
+    }
+
 }
