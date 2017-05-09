@@ -15,7 +15,7 @@ public class NumbersTest {
         String actual = numbers.oneToTen();
 
         //: Then
-        Assert.assertEquals("The two strings are equal", expected, actual);
+        Assert.assertEquals("The two strings should be equal", expected, actual);
     }
 
     @Test
