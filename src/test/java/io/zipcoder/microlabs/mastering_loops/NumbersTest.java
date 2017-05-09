@@ -33,10 +33,14 @@ public class NumbersTest {
     @Test
     public void squaresTest(){
         //: Given
+        Numbers numbers = new Numbers();
+        String expected = "*** Output ***\nsquares()\n1\n4\n9\n16\n25\n36\n49\n64\n81\n100";
 
         //: When
+        String actual = numbers.squares();
 
         //: Then
+        Assert.assertEquals("The two strings should be equal", expected, actual);
     }
 
     @Test

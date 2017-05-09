@@ -38,7 +38,22 @@ public class Numbers {
     }
 
     public String squares(){
-        return "";
+        String output = "*** Output ***\n";
+        String methodName= "squares()\n";
+        String filledString= "";
+
+        for(int i=1; i<=10;i++){
+            if(i<=9){
+                int answer= i*i;
+                filledString= filledString +Integer.toString(answer)+ "\n";
+            }
+            else{
+                int answer = i*i;
+                filledString= filledString + Integer.toString(answer);
+            }
+        }
+
+        return output + methodName+ filledString;
     }
 
     public String random4(){
