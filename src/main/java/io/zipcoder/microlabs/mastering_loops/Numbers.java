@@ -61,11 +61,42 @@ public class Numbers {
     }
 
     public String even(int n){
-        return "";
+        String output= "*** Output ***\n";
+        String methodName= "even(" + n +")\n";
+        String filledString= "";
+
+        for(int i=1; i<n;i++){
+            if (i%2 ==0 && i<=(n-3)) {
+                filledString = filledString + Integer.toString(i) + "\n";
+            }
+            else if (i%2 ==0 && i>(n-3)){
+                filledString = filledString + Integer.toString(i);
+
+            }
+        }
+
+
+
+
+        return output +methodName + filledString;
     }
 
     public String powers(int n){
-        return "";
+        String output= "*** Output ***\n";
+        String methodName= "powers("+ n +")\n";
+        String filledString= "";
+        int answer= 1;
+
+        for(int i=1; i<=n; i++) {
+            if (i < n) {
+                answer *= 2;
+                filledString += Integer.toString(answer) + "\n";
+            } else {
+                answer *= 2;
+                filledString += Integer.toString(answer);
+            }
+        }
+        return output+ methodName +filledString;
     }
 
 }
