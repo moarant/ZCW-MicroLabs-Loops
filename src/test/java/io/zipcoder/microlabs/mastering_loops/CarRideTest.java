@@ -10,7 +10,7 @@ public class CarRideTest {
     public void testAreWeThereYetYes(){
         //: Given
         CarRide carRide = new CarRide();
-        String tellAnswer= "yes";
+        String tellInput= "yes";
         String expected= "Good!";
 
         //: When
