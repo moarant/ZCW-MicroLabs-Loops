@@ -5,52 +5,42 @@ public class Numbers {
 
 
     public String oneToTen() {
-        String output = "*** Output ***\n";
-        String methodName = "oneToTen()\n";
+        String output = "*** Output ***\n" + "oneToTen()";
+
         String filledString = "";
 
         for (int i = 1; i <= 10; i++) {
-            if (i <= 9) {
-                filledString = filledString + Integer.toString(i) + "\n";
-            } else {
-                filledString = filledString + Integer.toString(i);
-            }
+                filledString += "\n"+ i ;
+
         }
-        return output + methodName + filledString;
+        return output + filledString;
     }
+
 
     public String oddNumbers() {
-        String output = "*** Output ***\n";
-        String methodName = "oddNumbers()\n";
+        String output = "*** Output ***\n"+ "oddNumbers()";
         String filledString = "";
 
-        for (int i = 1; i <= 20; i++) {
-            if (i % 2 == 1 && i <= 18) {
-                filledString = filledString + Integer.toString(i) + "\n";
-            } else if (i % 2 == 1 && i > 18) {
-                filledString = filledString + Integer.toString(i);
-            }
+        for (int i=1; i<=20;i+=2){
+            filledString+= "\n"+i;
         }
-        return output + methodName + filledString;
+        return output + filledString;
     }
 
+
     public String squares() {
-        String output = "*** Output ***\n";
-        String methodName = "squares()\n";
+        String output = "*** Output ***\n" +"squares()";
         String filledString = "";
 
         for (int i = 1; i <= 10; i++) {
-            if (i <= 9) {
                 int answer = i * i;
-                filledString = filledString + Integer.toString(answer) + "\n";
-            } else {
-                int answer = i * i;
-                filledString = filledString + Integer.toString(answer);
-            }
+                filledString += "\n"+ answer;
+
         }
 
-        return output + methodName + filledString;
+        return output + filledString;
     }
+
 
     public String random4() {
         RandomNumberGenerator rng = new RandomNumberGenerator();
@@ -65,38 +55,31 @@ public class Numbers {
         return Integer.toString(randomNumber);
     }
 
+
     public String even(int n) {
-        String output = "*** Output ***\n";
-        String methodName = "even(" + n + ")";
+        String output = "*** Output ***\n"+"even(" + n + ")";
         String filledString = "";
 
-        for (int i = 1; i < n; i++) {
-            if (i % 2 == 0 && i <= n) {
-                filledString = filledString + "\n" + i;
-            }
+        for (int i = 2; i < n; i+=2) {
+                filledString += "\n" + i;
 
         }
 
-
-        return output + methodName + filledString;
+        return output + filledString;
     }
 
+
     public String powers(int n) {
-        String output = "*** Output ***\n";
-        String methodName = "powers(" + n + ")\n";
+        String output = "*** Output ***\n"+ "powers(" + n + ")";
         String filledString = "";
         int answer = 1;
 
         for (int i = 1; i <= n; i++) {
-            if (i < n) {
                 answer *= 2;
-                filledString += Integer.toString(answer) + "\n";
-            } else {
-                answer *= 2;
-                filledString += Integer.toString(answer);
-            }
+                filledString += "\n"+answer ;
+
         }
-        return output + methodName + filledString;
+        return output + filledString;
     }
 
 
